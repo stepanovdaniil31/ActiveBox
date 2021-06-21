@@ -1,0 +1,154 @@
+body {
+  background: #008aab;
+  display: block;
+  box-sizing: border-box;
+}
+.page {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.main_logo {
+  width: 500px;
+  display: block;
+  transition: 500ms;
+}
+
+.main_logo:hover {
+  width: 600px;
+  transform: scale(1.2);
+}
+.main_logo:active {
+  width: 5000px;
+}
+.title {
+  font-family: 'Monoton', cursive;
+  color: #d1d4d4;
+  font-size: 90px;
+}
+
+.table {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #d1d4d4;
+  position: absolute;
+}
+.table_content {
+  width: 100%;
+  height: 0px;
+  background: #008aab;
+  position: absolute;
+  margin: auto;
+  top: 0;
+}
+.table_content_afterclick {
+  transition-delay: 500ms;
+  transition-duration: 2000ms;
+  height: 100%;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 1500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.table_element {
+  width: 300px;
+  height: auto;
+  margin: 15px 50px 15px 50px;
+  opacity: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: 1000ms;
+  background: rgba(0,0,0,0.2);
+}
+.line_top {
+  font-family: 'Rubik', sans-serif;
+  line-height: 50px;
+  font-size: 30px;
+  color: #008aab;
+  text-align: center;
+  padding-bottom: 10px;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  top: 0;
+  background: #d1d4d4;
+  box-shadow: 0 0 20px#000;
+}
+.line_bottom {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  bottom: 0;
+  background: #d1d4d4;
+  box-shadow: 0 0 0px#000;
+}
+.group_teams {
+  width: 100%;
+  height: 0px;
+}
+.team {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0px;
+}
+.team span {
+  font-family: 'Rubik', sans-serif;
+  color: #d1d4d4;
+  font-size: 25px;
+  line-height: 35px;
+}
+.team img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin: 12px 20px 15px 40px;
+}
+.group_teams_afterclick {
+  transition: 1500ms;
+  height: 240px;
+  padding-top: 20px;
+}
+a {
+  color: #d1d4d4;
+  text-decoration: none;
+  font-size: 50px;
+  position: absolute;
+  bottom: 0;
+  font-family: 'Rubik', sans-serif;
+}
+.russia {
+  opacity: 0;
+  transition: 1500ms;
+}
+.russia img {
+  border-radius: 10px;
+}
+.russia span {
+  font-family: 'Rubik', sans-serif;
+  color: #d1d4d4;
+  font-size: 30px;
+}
+.show {
+  display: block;
+  opacity: inherit;
+}
+.hide {
+  display: none;
+}

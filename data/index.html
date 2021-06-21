@@ -2,414 +2,167 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>ActiveBox</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Open+Sans:wght@400;700&family=Raleway:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Euro 2020</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <meta name="description" content="Description of site">
-
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 </head>
 
-
 <body>
-
-    <!--Sprite
-    =======================================-->
-    <svg style="display: none;">
-        <symbol id="facebook" viewBox="0 0 24 24">
-            <g>
-                <path
-                    d="m15.997 3.985h2.191v-3.816c-.378-.052-1.678-.169-3.192-.169-3.159 0-5.323 1.987-5.323 5.639v3.361h-3.486v4.266h3.486v10.734h4.274v-10.733h3.345l.531-4.266h-3.877v-2.939c.001-1.233.333-2.077 2.051-2.077z" />
-            </g>
-        </symbol>
-        <symbol id="twitter" viewBox="0 0 512 512">
-            <g>
-                <path d="M512,97.248c-19.04,8.352-39.328,13.888-60.48,16.576c21.76-12.992,38.368-33.408,46.176-58.016
-			c-20.288,12.096-42.688,20.64-66.56,25.408C411.872,60.704,384.416,48,354.464,48c-58.112,0-104.896,47.168-104.896,104.992
-			c0,8.32,0.704,16.32,2.432,23.936c-87.264-4.256-164.48-46.08-216.352-109.792c-9.056,15.712-14.368,33.696-14.368,53.056
-			c0,36.352,18.72,68.576,46.624,87.232c-16.864-0.32-33.408-5.216-47.424-12.928c0,0.32,0,0.736,0,1.152
-			c0,51.008,36.384,93.376,84.096,103.136c-8.544,2.336-17.856,3.456-27.52,3.456c-6.72,0-13.504-0.384-19.872-1.792
-			c13.6,41.568,52.192,72.128,98.08,73.12c-35.712,27.936-81.056,44.768-130.144,44.768c-8.608,0-16.864-0.384-25.12-1.44
-			C46.496,446.88,101.6,464,161.024,464c193.152,0,298.752-160,298.752-298.688c0-4.64-0.16-9.12-0.384-13.568
-			C480.224,136.96,497.728,118.496,512,97.248z" />
-            </g>
-        </symbol>
-        <symbol id="linkedin" viewBox="0 0 512 512">
-            <g>
-                <path
-                    d="m437 0h-362c-41.351562 0-75 33.648438-75 75v362c0 41.351562 33.648438 75 75 75h362c41.351562 0 75-33.648438 75-75v-362c0-41.351562-33.648438-75-75-75zm-256 406h-60v-210h60zm0-240h-60v-60h60zm210 240h-60v-120c0-16.539062-13.460938-30-30-30s-30 13.460938-30 30v120h-60v-210h60v11.308594c15.71875-4.886719 25.929688-11.308594 45-11.308594 40.691406.042969 75 36.546875 75 79.6875zm0 0" />
-            </g>
-        </symbol>
-    </svg>
-
-    <!--HEADER
-    =======================================-->
-    <header class="header" id="header">
-        <div class="container">
-            <div class="header__inner">
-                <div class="header__logo">
-                    <img src="img/logo.png" alt="LOGOTYPE">
-                </div>
-                <nav class="nav" id="nav">
-                    <a class="nav__link" href="" data-scroll="#features">FEATURES</a></li>
-                    <a class="nav__link" href="" data-scroll="#works">WORKS</a></li>
-                    <a class="nav__link" href="" data-scroll="#team">OUR TEAM</a></li>
-                    <a class="nav__link" href="" data-scroll="#reviews">TESTIMONIALS</a></li>
-                    <a class="nav__link" href="" data-scroll="#download">DOWNLOAD</a></li>
-                </nav>
-                <button class="burger" type="button" id="navToggle">
-                    <span class="burger_item">menu</span>
-                </button>
-            </div>
-        </div>
-    </header>
-
-    <!--INTRO
-    ========================================-->
-    <div class="intro" id="intro">
-        <div class="container">
-            <div class="intro__inner">
-                <h1 class="intro__title">Your Favorite One Page Multi Purpose Template</h1>
-                <h2 class="intro__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Praesent commodo cursus magna<br />
-                    vel scelerisque nisl consectetur et.</h2>
-                <a class="btn btn__red" href="#">Find Out More</a>
-            </div>
-        </div>
-    </div>
-
-    <!--FEATURES
-    =======================================-->
-    <div class="container" id="features">
-        <div class="features">
-            <div class="features__item">
-                <img class="features__icon" src="img/features/feature1.png" alt="">
-                <h4 class="features__title">Easily Customised</h4>
-                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
-                    risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="img/features/feature2.png" alt="">
-                <h4 class="features__title">Responsive REady</h4>
-                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
-                    risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="img/features/feature3.png" alt="">
-                <h4 class="features__title">Modern Design</h4>
-                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
-                    risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="img/features/feature4.png" alt="">
-                <h4 class="features__title">Clean Code</h4>
-                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
-                    risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="img/features/feature5.png" alt="">
-                <h4 class="features__title">Ready to Ship</h4>
-                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
-                    risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
-                </div>
-            </div>
-            <div class="features__item">
-                <img class="features__icon" src="img/features/feature6.png" alt="">
-                <h4 class="features__title">Download for Free</h4>
-                <div class="features__text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis
-                    risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla
-                </div>
-            </div>
-        </div>
-        <!--/.features-->
-    </div>
-    <!--/.container-->
-
-    <!--WORKS
-    ========================================-->
-    <div class="works" id="works">
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work1.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work2.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work3.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work4.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work5.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work6.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work7.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-        <div class="works__item">
-            <img class="works__photo" src="img/works/work8.png" alt="">
-            <div class="works__content">
-                <div class="works__title">Project name</div>
-                <div class="works__text">User interface design</div>
-            </div>
-        </div>
-    </div>
-    <!--/.works-->
-
-    <!--TEAM
-    ====================================-->
-    <div class="team" id="team">
-        <div class="container">
-            <div class="team__inner">
-                <div class="team__item">
-                    <img src="img/team/team1.jpg" alt="" class="team__photo">
-                    <div class="team__name">Ruth Woods</div>
-                    <div class="team__prof">Founder, CEO</div>
-                    <div class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                        fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non
-                        magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
-                    <div class="social">
-                        <a href="" class="social__item">
-                            <svg class="social__icon">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social__item">
-                            <svg class="social__icon">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social__item">
-                            <svg class="social__icon">
-                                <use xlink:href="#linkedin"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="team__item">
-                    <img src="img/team/team2.jpg" alt="" class="team__photo">
-                    <div class="team__name">Timothy Reed</div>
-                    <div class="team__prof">Co-Founder, Developer</div>
-                    <div class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                        fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non
-                        magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
-                    <div class="social">
-                        <div class="social">
-                            <a href="" class="social__item">
-                                <svg class="social__icon">
-                                    <use xlink:href="#facebook"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="social__item">
-                                <svg class="social__icon">
-                                    <use xlink:href="#twitter"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="social__item">
-                                <svg class="social__icon">
-                                    <use xlink:href="#linkedin"></use>
-                                </svg>
-                            </a>
+    <div class="page">
+        <div class="table">
+            <div class="table_content">
+                <div class="container">
+                    <div class="table_element">
+                        <div class="line_top">ГРУППА A</div>
+                        <div class="group_teams">
+                            <div class="team">
+                                <img src="./img/italie.jpg" alt="">
+                                <span>ИТАЛИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/uels.png" alt="">
+                                <span>УЭЛЬС</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/schveycary.png" alt="">
+                                <span>ШВЕЙЦАРИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/turkey.png" alt="">
+                                <span>ТУРЦИЯ</span>
+                            </div>
                         </div>
+                        <div class="line_bottom"></div>
                     </div>
-                </div>
-                <div class="team__item">
-                    <img src="img/team/team3.jpg" alt="" class="team__photo">
-                    <div class="team__name">Victoria Valdez</div>
-                    <div class="team__prof">UI Designer</div>
-                    <div class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                        fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non
-                        magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
-                    <div class="social">
-                        <div class="social">
-                            <a href="" class="social__item">
-                                <svg class="social__icon">
-                                    <use xlink:href="#facebook"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="social__item">
-                                <svg class="social__icon">
-                                    <use xlink:href="#twitter"></use>
-                                </svg>
-                            </a>
-                            <a href="" class="social__item">
-                                <svg class="social__icon">
-                                    <use xlink:href="#linkedin"></use>
-                                </svg>
-                            </a>
+                    <div class="table_element">
+                        <div class="line_top">ГРУППА B</div>
+                        <div class="group_teams">
+                            <div class="team">
+                                <img src="./img/belgy.png" alt="">
+                                <span>БЕЛЬГИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/russia.png" alt="">
+                                <span>РОССИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/finland.png" alt="">
+                                <span>ФИНЛЯНДИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/danya.png" alt="">
+                                <span>ДАНИЯ</span>
+                            </div>
                         </div>
+                        <div class="line_bottom"></div>
                     </div>
+                    <div class="table_element">
+                        <div class="line_top">ГРУППА C</div>
+                        <div class="group_teams">
+                            <div class="team">
+                                <img src="./img/niderland.png" alt="">
+                                <span>НИДЕРЛАНДЫ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/ukraine.png" alt="">
+                                <span>УКРАИНА</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/austria.jpg" alt="">
+                                <span>АВСТРИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/north_makedony.png" alt="">
+                                <span>СЕВЕРНАЯ МАКЕДОНИЯ</span>
+                            </div>
+                        </div>
+                        <div class="line_bottom"></div>
+                    </div>
+                    <div class="table_element">
+                        <div class="line_top">ГРУППА D</div>
+                        <div class="group_teams">
+                            <div class="team">
+                                <img src="./img/chehy.png" alt="">
+                                <span>ЧЕХИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/england.png" alt="">
+                                <span>АНГЛИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/horvaty.png" alt="">
+                                <span>ХОВАТИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/schotland.png" alt="">
+                                <span>ШОТЛАНДИЯ</span>
+                            </div>
+                        </div>
+                        <div class="line_bottom"></div>
+                    </div>
+                    <div class="table_element">
+                        <div class="line_top">ГРУППА E</div>
+                        <div class="group_teams">
+                            <div class="team">
+                                <img src="./img/schvec.png" alt="">
+                                <span>ШВЕЦИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/slovaki.png" alt="">
+                                <span>СЛОВАКИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/spain.png" alt="">
+                                <span>ИСПАНИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/polian.png" alt="">
+                                <span>ПОЛЬША</span>
+                            </div>
+                        </div>
+                        <div class="line_bottom"></div>
+                    </div>
+                    <div class="table_element">
+                        <div class="line_top">ГРУППА F</div>
+                        <div class="group_teams">
+                            <div class="team">
+                                <img src="./img/france.png" alt="">
+                                <span>ФРАНЦИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/germany.png" alt="">
+                                <span>ГЕРМАНИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/portugaly.png" alt="">
+                                <span>ПОРТУГАЛИЯ</span>
+                            </div>
+                            <div class="team">
+                                <img src="./img/vengrya.png" alt="">
+                                <span>ВЕНГРИЯ</span>
+                            </div>
+                        </div>
+                        <div class="line_bottom"></div>
+                    </div>
+                    <a href="https://www.sports.ru/uefa-euro/">SPORTS.RU</a>
                 </div>
-                <div class="team__item">
-                    <img src="img/team/team4.jpg" alt="" class="team__photo">
-                    <div class="team__name">Beverly Little</div>
-                    <div class="team__prof">Data Scientist</div>
-                    <div class="team__text">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                        fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non
-                        magna. Nullam quis risus eget urna mollis ornare vel eu leo.</div>
-                    <div class="social">
-                        <a href="" class="social__item">
-                            <svg class="social__icon">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social__item">
-                            <svg class="social__icon">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social__item">
-                            <svg class="social__icon">
-                                <use xlink:href="#linkedin"></use>
-                            </svg>
-                        </a>
-                    </div>
+                <div class="russia">
+                    <span>Состав сборной России:</span>
+                    <img src="./img/russia_sostav.png" alt="">
                 </div>
             </div>
-            <!--/.team__inner-->
+
         </div>
-        <!--/.container-->
+        <img onclick="showTable()" class="main_logo" src="./img/euro_logo.png" alt="">
+        <span class="title">EURO2020</span>
     </div>
-    <!--/.team-->
-
-    <!--REVIEWS
-    ===========================================-->
-    <div class="reviews" id="reviews">
-        <div class="container">
-            <div class="reviews__slider" id="reviewsSlider">
-                <div>
-                    <div class="reviews__item">
-                        <div class="reviews__photo">
-                            <img class="reviews__img" src="img/photo-reviews.jpg" alt="">
-                        </div>
-                        <div class="reviews__content">
-                            <div class="reviews__text">“Integer posuere erat a ante venenatis dapibus posuere velit
-                                aliquet.
-                                Donec sed odio dui. Aenean eu leo quam...”</div>
-                            <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <div class="reviews__item">
-                        <div class="reviews__photo">
-                            <img class="reviews__img" src="img/photo-reviews.jpg" alt="">
-                        </div>
-                        <div class="reviews__content">
-                            <div class="reviews__text">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
-                                facilis magni vel debitis, commodi assumenda illum nam, optio quaerat facere tempora at
-                                deleniti quod placeat. Suscipit dolore consequuntur numquam ab.”</div>
-                            <div class="reviews__author">Susan Sims, Interaction Designer at XYZ</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--container-->
-    </div>
-    <!--reviews-->
-
-    <!--DOWNLOAD
-    ============================================-->
-    <div class="download" id="download">
-        <div class="container">
-            <h3 class="download__title">Are You Ready to Start? Download Now For Free!</h3>
-            <div class="download__text">Fusce dapibus, tellus ac cursus commodo</div>
-            <div class="download__button__inner">
-                <a href="#" class="download__button">download here</a>
-            </div>
-        </div>
-    </div>
-
-    <!--FOOTER
-    =============================================-->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__contant">
-                <div class="footer__block">
-                    <div class="footer__title">location</div>
-                    <div class="footer__text">3481 Melrose Place</br>Beverly Hills, CA 90210</div>
-                </div>
-                <div class="footer__block">
-                    <div class="footer__title">share whit love</div>
-                    <div class="social footer__contacts">
-                        <a href="" class="social__item__footer">
-                            <svg class="social__icon__footer">
-                                <use xlink:href="#facebook"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social__item__footer">
-                            <svg class="social__icon__footer">
-                                <use xlink:href="#twitter"></use>
-                            </svg>
-                        </a>
-                        <a href="" class="social__item__footer">
-                            <svg class="social__icon__footer">
-                                <use xlink:href="#linkedin"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer__block">
-                    <div class="footer__title">about activebox</div>
-                    <div class="footer__text">Cras justo odio, dapibus ac facilisis in, egestas eget</br>quam. Donec
-                        ullamcorper nulla non metus auctor</br>fringilla.</div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="./app.js"></script>
 </body>
 
 </html>
